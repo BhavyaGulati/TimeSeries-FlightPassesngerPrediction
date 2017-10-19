@@ -23,12 +23,13 @@ With time series data, the sequence of values is important. A simple method that
 
 The function takes two arguments, the dataset which is a NumPy array that we want to convert into a dataset and the look_back which is the number of previous time steps to use as input variables to predict the next time period, in this case, defaulted to 1.
 
-X		Y
-112		118
-118		132
-132		129
-129		121
-121		135
+|X	|	Y|
+|---|--|
+|112|		118|
+|118|		132|
+|132|		129|
+|129|		121|
+|121|		135|
 If you compare these first 5 rows to the original dataset sample listed in the previous section, you can see the X=t and Y=t+1 pattern in the numbers.
 We can now fit a Multilayer Perceptron model to the training data.
 
@@ -38,18 +39,6 @@ Once the model is fit, we can estimate the performance of the model on the train
 Finally, we can generate predictions using the model for both the train and test dataset to get a visual indication of the skill of the model.
 Taking the square root of the performance estimates, we can see that the model has an average error of 23 passengers (in thousands) on the training dataset and 48 passengers (in thousands) on the test dataset.
 
-Epoch 195/200
-0s - loss: 536.7014
-Epoch 196/200
-0s - loss: 555.4216
-Epoch 197/200
-0s - loss: 552.2841
-Epoch 198/200
-0s - loss: 541.2220
-Epoch 199/200
-0s - loss: 542.3288
-Epoch 200/200
-0s - loss: 534.2096
 Train Score: 532.59 MSE (23.08 RMSE)
 Test Score: 2358.07 MSE (48.56 RMSE)
 
