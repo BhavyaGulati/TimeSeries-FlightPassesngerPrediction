@@ -30,6 +30,7 @@ The function takes two arguments, the dataset which is a NumPy array that we wan
 |132|		129|
 |129|		121|
 |121|		135|
+
 If you compare these first 5 rows to the original dataset sample listed in the previous section, you can see the X=t and Y=t+1 pattern in the numbers.
 We can now fit a Multilayer Perceptron model to the training data.
 
@@ -53,12 +54,14 @@ For example, given the current time (t) we want to predict the value at the next
 
 When phrased as a regression problem the input variables are t-2, t-1, t and the output variable is t+1.
 
-X1	X2	X3	Y
-112	118	132	129
-118	132	129	121
-132	129	121	135
-129	121	135	148
-121	135	148	148
+|X1|	X2|	X3|	Y|
+|--|----|---|--|
+|112|	118|	132|	129|
+|118|	132|	129|	121|
+|132|	129|	121|	135|
+|129|	121|	135|	148|
+|121|	135|	148|	148|
+
 We can re-run the example in the previous section with the larger window size. We will increase the network capacity to handle the additional information. The first hidden layer is increased to 14 neurons and a second hidden layer is added with 8 neurons. The number of epochs is also increased to 400.
 Looking at the graph, we can see more structure in the predictions.
 
