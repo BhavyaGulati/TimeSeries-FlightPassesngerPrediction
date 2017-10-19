@@ -5,12 +5,13 @@ This is a problem where given a year and a month, the task is to predict the num
 
 ## Below is a sample of the first few lines of the file.
 
-"Month","International airline passengers: monthly totals in thousands. Jan 49 ? Dec 60"
-"1949-01",112
-"1949-02",118
-"1949-03",132
-"1949-04",129
-"1949-05",121
+|"Month"|"International airline passengers: monthly totals in thousands.|
+|-------|---------------------------------------------------------------|
+|"1949-01"|112|
+|"1949-02"|118|
+|"1949-03"|132|
+|"1949-04"|129|
+|"1949-05"|121|
 
 We can load this dataset easily using the Pandas library. We are not interested in the date, given that each observation is separated by the same interval of one month. Therefore when we load the dataset we can exclude the first column.
 ## Multilayer Preceptron Regression
