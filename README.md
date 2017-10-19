@@ -63,7 +63,7 @@ When phrased as a regression problem the input variables are t-2, t-1, t and the
 |121|	135|	148|	148|
 
 We can re-run the example in the previous section with the larger window size. We will increase the network capacity to handle the additional information. The first hidden layer is increased to 14 neurons and a second hidden layer is added with 8 neurons. The number of epochs is also increased to 400.
-![Alt text](http://img.jpg "Optional title")
+![Alt text](http://Window-Method-for-Time-Series-Prediction-With-Neural-Networks.png "Optional title")
 Looking at the graph, we can see more structure in the predictions.
 
 You still would have to fine tune the parameters to get the best accuracy!
